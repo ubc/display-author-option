@@ -2,7 +2,7 @@
 /*
 Plugin Name: Display Author Option
 Plugin URI: 
-Description: This plugin allows you to overwrite what is display in the as the author. You can find the settings to change that under Settings > Reading
+Description: This plugin allows you to select how your author is being displayed. You can find the settings to change that under Settings > Reading
 Version: 1
 Author: CTLT Dev
 Author URI: http://ctlt.ubc.ca
