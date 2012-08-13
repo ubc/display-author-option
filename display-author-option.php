@@ -88,7 +88,7 @@ class Display_Author_Option {
 	public static function the_author( $the_author ) {
 		global $authordata;
 		
-		if( !self::$settings || self::$settings = 'default')
+		if( !self::$settings || self::$settings == 'default')
 			return $the_author;
 		switch( self::$settings ) {
 			case '%fn %ln':
