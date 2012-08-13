@@ -77,9 +77,9 @@ class Display_Author_Option {
 	}
 	
 	public static function plugin_action_links( $links, $file ) {
-	if ( $file == plugin_basename( dirname(__FILE__).'/display-author-option.php' ) ) {
-		$links[] = '<a href="'.admin_url('options-reading.php#display_author_options-wrap').'">'.__('Settings').'</a>';
-	}
+		if ( $file == plugin_basename( dirname(__FILE__).'/display-author-option.php' ) ) {
+			$links[] = '<a href="'.admin_url('options-reading.php#display_author_options-wrap').'">'.__('Settings').'</a>';
+		}
 
 	return $links;
 	}
