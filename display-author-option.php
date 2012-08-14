@@ -93,35 +93,35 @@ class Display_Author_Option {
 		switch( self::$settings ) {
 			case '%fn %ln':
 				$data = get_user_meta( $authordata->data->ID );
-				return $data['first_name'][0]." ".$data['last_name'][0];
+				if( !empty($data['first_name'][0]) || !empty($data['last_name'][0]) )
+					return $data['first_name'][0]." ".$data['last_name'][0];
 			break;
 			
 			case '%ln %fn':
 				$data = get_user_meta( $authordata->data->ID );
-				return $data['last_name'][0]." ".$data['first_name'][0];
+				if( !empty($data['first_name'][0]) || !empty($data['last_name'][0]) )
+					return $data['last_name'][0]." ".$data['first_name'][0];
 			break;
 			
 			case '%nn':
-				if( isset($authordata->data->user_nicename))
+				if( !empty( $authordata->data->user_nicename ) )
 					return $authordata->data->user_nicename;
-				else
-					return '';
 			break;
 			
 			case '%un':
-				if( isset($authordata->data->user_login))
-					return $authordata->data->user_login;
-				else
-					return '';
+				if( !empty($authordata->data->user_login) )
+					return $authordata->data->user_login;	
 			break;
 			
 			case '%fn':
 				$data = get_user_meta( $authordata->data->ID );
-				return $data['first_name'][0];
+				if( !empty($data['first_name'][0]))
+					return $data['first_name'][0];
 			break;
 			
 			case '%ln':
 				$data = get_user_meta( $authordata->data->ID );
+				if( !empty($data['last_name'][0]))
 				return $data['last_name'][0];
 			break;
 			
