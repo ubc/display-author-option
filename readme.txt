@@ -7,7 +7,7 @@ Stable tag: 1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin enables you do overwrite how the author is being displayed. By overwriting the the_author filter. 
+This plugin enables you to overwrite how the author is being displayed. By overwriting the the_author filter. 
 
 == Description ==
 
